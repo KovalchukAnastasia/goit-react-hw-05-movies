@@ -1,6 +1,6 @@
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import fetchTheMoviedb from 'services/fetchTheMoviedb';
+import fetchTheMoviedb from '../../services/fetchTheMoviedb';
 import style from './MovieDetails.module.css';
 import AddInfoBar from '../../components/AddInfoBar/AddInfoBar';
 

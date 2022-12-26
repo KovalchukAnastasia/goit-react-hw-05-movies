@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import MovieList from '../../components/MovieList/MovieList';
-import fetchTheMoviedb from 'services/fetchTheMoviedb';
+import fetchTheMoviedb from '../../services/fetchTheMoviedb';
 
 export default function Home() {
   const location = useLocation();

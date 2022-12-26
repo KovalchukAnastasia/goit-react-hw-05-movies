@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams, useLocation } from 'react-router-dom';
-import fetchSearchMovie from 'services/fetchSearchMovie';
+import fetchSearchMovie from '../../services/fetchSearchMovie';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import MovieList from '../../components/MovieList/MovieList';
 

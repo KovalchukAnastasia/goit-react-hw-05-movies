@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import fetchTheMoviedb from 'services/fetchTheMoviedb';
+import fetchTheMoviedb from '../../services/fetchTheMoviedb';
 import style from './Reviews.module.css';
 export default function Reviews() {
   const { movieId } = useParams();
