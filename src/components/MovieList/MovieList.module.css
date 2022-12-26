@@ -1,0 +1,13 @@
+
+.list {
+    padding: 20px;
+}
+
+.link {
+    color: navy;
+}
+
+.link:hover,
+.link:focus {
+    color: red;
+}
