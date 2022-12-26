@@ -1,6 +1,15 @@
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import style from './MovieList.module.css';
+import styled from 'styled-components';
+const StyledLink = styled(NavLink)`
+  color: black;
+  margin-bottom: 10px;
+
+  &.active {
+    color: red;
+  }
+`;
 export default function MovieList({ path, movies, state }) {
   return (
     <>
@@ -8,9 +17,9 @@ export default function MovieList({ path, movies, state }) {
       <ul className={style.list}>
         {movies.map(({ id, title }) => (
           <li key={id}>
-            <NavLink to={`${path}${id}`} state={state} className={style.link}>
+            <StyledLink to={`${path}${id}`} state={state}>
               {title}
-            </NavLink>
+            </StyledLink>
           </li>
         ))}
       </ul>
